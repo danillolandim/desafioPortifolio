@@ -22,19 +22,21 @@ body,a,p, button{
   font-weight: 400;
   font-size: 1rem;
 }
-
+/*
 .container{
   display: flex;
   gap: 2rem;
   padding: 2rem;
 }
+*/
+
 
 .profile{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 348px;
-  height: 292px;
+  width: 21.75rem;
+  height: 18.25rem;
   border-radius: 1rem;
 
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.325);
@@ -42,29 +44,29 @@ body,a,p, button{
 }
 
 .profile img{
-  border-radius: 200px;
-  width: 128px;
-  height: 128px;
+  border-radius: 12.5rem;
+  width: 8rem;
+  height: 8rem;
   margin-top: 2rem;
   border: solid 2px greenyellow;
 }
 
 .profile strong{
   margin-top: 2rem;
-  font-size: 23px;
+  font-size: 1.45rem;
   font-weight: bold;
 }
 .profile p{
   margin-top: 1rem;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .links{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 348px;
-  height: 348px;
+  width: 21.75rem;
+  height: 21.75rem;
   border-radius: 1rem;
   color: var(--text-color);
   justify-content: center;
@@ -95,8 +97,8 @@ body,a,p, button{
 .tecnologies{
   display: flex;
   flex-wrap: wrap;
-  width: 348px;
-  height: 208px;
+  width: 21.75rem;
+  height: 13rem;
   border-radius: 1rem;
   color: var(--text-color);
   padding: 1rem 1rem;
@@ -111,25 +113,26 @@ body,a,p, button{
   width: 100%;
 }
 .tecnologies p {
-  width: 86px;
-  height: 24px;
+  width: 5.375rem;
+  height: 1.5rem;
   background: var(--bg-techs);
   color: black;
   
   text-align: center;
   border-radius: 1rem;
   font-weight: bold;
-  font-size: 10px;
-  padding-top: 5px;
+  font-size: 0.625rem;
+  padding-top: 0.3125rem;
 }
 
 .titleOfProjects{
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 900px;
-  height: 86px;
-  padding: 30px 30px;
+  width: 56.25rem;
+  height: 5.375rem;
+  padding: 1.875rem 1.875rem;
   border-radius: 1rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.325);
   background: var(--bg-cards);
@@ -139,15 +142,23 @@ body,a,p, button{
   text-decoration: none;
   color: var(--text-color)
 }
-
+/*
 .containerProjects{
   display: flex;
-  gap: 30px ;
+  gap: 1.875rem;
+}
+*/
+
+.containerProjects{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  gap: 1rem;
+  align-items:flex-start;
 }
 .projectPreview{
-  margin-top: 31px;
-  width: 434px;
-  height: 185px;
+  margin-top: 2rem;
+  width: 100%;
+  height: 11.5625rem;
   border-radius: 1rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.325);
   background: var(--bg-cards);
@@ -193,69 +204,72 @@ body,a,p, button{
 
 .containerProjects p{
   padding: 1rem 0;
-  font-size: 14px;
+  font-size: 0.875rem;
 
 }
 .recentPosts{
-  margin-top: 31px;
-  width: 900px;
-  height: 86px;
+  margin-top: 2rem;
+  width: 56.25rem;
+  height: 5.375rem;
   border-radius: 1rem;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.325);
   background: var(--bg-cards);
   display: flex;
   align-items: center;
-  padding: 30px 30px;
+  padding: 1.875rem 1.875rem;
 }
 
 .cardRecentPost{
-  margin-top: 31px;
-  width: 900px;
-  height: 201px;
-  padding: 30px 30px;
+  margin-top: 2rem;
+ 
+  
+  padding: 1.875rem 1.875rem;
   border-radius: 1rem;
   background: var(--bg-cards);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.325);
-  display: flex;
+ 
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  align-content: flex-start;
 }
 
 .cardRecentPost img{
-  width: 128px;
-  height: 128px;
-  border-radius: 80px;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 5rem;
 }
 
 .containerRecentPost{
-  margin-left:20px ;
-  line-height: 23px;
+  margin-left:1.25rem ;
+  line-height: 1.4375rem;
 }
 
 .containerRecentPost strong{
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   display: block;
 }
 
 .containerRecentPost span{
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .containerRecentPost p{
-  margin-top: 28px;
+  margin-top: 1.75rem;
 }
 
 .containerRecentPost footer{
-  margin-top: 11px;
+  margin-top: 0.6875rem;
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .experiencia{ 
-    width: 348px;
-    height: 348px;
+    width: 21.75rem;
+    height: 21.75rem;
     border-radius: 1rem;
     color: var(--text-color);
-    padding: 20px 30px;
+    padding: 1.25rem 1.875rem;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
@@ -267,23 +281,73 @@ body,a,p, button{
 .experiencia ul{
   display: flex;
   flex-direction: column;
-  margin: 20px 25px; 
-  width: 175px;
-  gap:15px;
+  margin: 1.25rem 1.5625rem; 
+  width: 10.9375rem;
+  gap:1rem;
 }
 
 
 .experiencia strong{
   display: block;
-  font-size:12px ;
+  font-size:0.75rem ;
   font-weight: bold;
 }
 .experiencia ul li{
-  font-size:12px ;
+  font-size:0.75rem ;
 
 }
 
 footer{
   display: flex;
   justify-content: center;
+}
+
+
+.container{
+  max-width: 80rem;
+  margin: 1rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns:350px 1fr;
+  gap: 1rem;
+  align-items:flex-start;
+}
+
+
+@media(max-width: 768px){
+  .container{
+    grid-template-columns: 1fr; 
+  }
+
+  .titleOfProjects{
+    max-width: 350px;
+  }
+
+  .containerProjects{
+    display: grid;
+    max-width: 350px;
+    grid-template-columns: 1fr;
+  }
+
+  .recentPosts{
+    max-width: 350px;
+    
+  }
+  
+  .cardRecentPost{
+    max-width: 350px;
+    grid-template-columns: 1fr;
+  }
+  
+  .containerRecentPost{
+    max-width: 350px;
+    grid-template-columns: 1fr;
+  }
+ 
+  .containerRecentPost footer{
+    display: grid;
+    max-width: 350px;
+  
+  }
 }
